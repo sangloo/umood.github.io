@@ -1,0 +1,1342 @@
+@font-face {
+    font-family: 'ProLight';
+    src: url('fonts/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Light.ttf');
+    src: url('fonts/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Light.otf') format('truetype'),
+         url('fonts/Mark%20Simonson%20-%20Proxima%20Nova%20Alt%20Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ProBlack';
+    src: url('fonts/Mark%20Simonson%20-%20Proxima%20Nova%20Black.ttf');
+    src: url('fonts/Mark%20Simonson%20-%20Proxima%20Nova%20Black.otf') format('truetype'),
+         url('fonts/Mark%20Simonson%20-%20Proxima%20Nova%20Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DB';
+    src: url('fonts/Dry%20Brush.ttf');
+}
+
+body{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first{
+    position: absolute;
+    background-color: #4b4b4b;
+    width: 88%;
+    height: 90%;
+    border: 2px solid #4b4b4b;
+    top: 5%;
+    right: 6%;
+    z-index: 10;
+    transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    -sand-transition: height 1s ease;
+}
+.firsthidden{
+    height: 0%;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    -sand-transition: height 1s ease;
+}
+
+#menu{
+    position: fixed;
+    margin: 0;
+    background-color: #f5ac77;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    z-index: 101;
+    top: 5%;
+    left: 6%;
+    margin-left: -4px;
+    font-family: ProLight;
+    padding-top: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: -1px 0px 20px rgba(75, 75, 75, 0.49);
+}
+
+.rightmenuhidden{
+    position: absolute;
+    height: 90%;
+    top: 5%;
+    left: 6%;
+    margin-left: -4px;
+    padding-top: 4px;
+    background-color: #f5ac77;
+    box-shadow: -1px 0px 20px rgba(75, 75, 75, 0.49);
+    z-index: 100;
+    width: 200px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -sand-transition: all 1s ease;
+    clip: rect(0px,0px,1000px,0px); 
+    -webkit-clip: rect(0px,0px,1000px,0px); 
+    -moz-clip: rect(0px,0px,1000px,0px); 
+    -o-clip: rect(0px,0px,1000px,0px); 
+    -ms-clip: rect(0px,0px,1000px,0px); 
+    -sand-clip: rect(0px,0px,1000px,0px); 
+}
+.rightmenu{
+    position: absolute;
+    width: 200px;
+    height: 90%;
+    top: 5%;
+    left: 6%;
+    margin-left: -4px;
+    padding-top: 4px;
+    background-color: #f5ac77;
+    box-shadow: -1px 0px 20px rgba(75, 75, 75, 0.49);
+    z-index: 100;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -sand-transition: all 1s ease;
+    clip: rect(0px,200px,1000px,0px);
+    -webkit-clip: rect(0px,200px,1000px,0px); 
+    -moz-clip: rect(0px,200px,1000px,0px); 
+    -o-clip: rect(0px,200px,1000px,0px); 
+    -ms-clip: rect(0px,200px,1000px,0px); 
+    -sand-clip: rect(0px,200px,1000px,0px);
+}
+.menuitemsf{
+    margin-top: 150px;
+    list-style: none;
+    font-family: ProLight;
+    color: white;
+    font-size: 1.4em;
+    width:200px;
+    margin-left: -40px;
+    text-align: center;
+    height: 45px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.menuitemsf:hover{
+    background-color: #d49b72;
+}
+
+.menuitems{
+    list-style: none;
+    font-family: ProLight;
+    color: white;
+    font-size: 1.4em;
+    width:200px;
+    margin-left: -40px;
+    text-align: center;
+    height: 45px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.menuitems:hover{
+    background-color: #d49b72;
+}
+
+
+.second{
+    position: absolute;
+    background-color: white;
+    width: 88%;
+    height: 90%;
+    border: 2px solid #4b4b4b;
+    top: 5%;
+    right: 6%;
+    z-index: 1;
+    transition: height 1s ease;
+    clip: rect(0px, 4000px, 1000px, 0px);
+    -webkit-clip: rect(0px, 4000px, 1000px, 0px);
+    -moz-clip: rect(0px, 4000px, 1000px, 0px);
+    -o-clip: rect(0px, 4000px, 1000px, 0px);
+    -ms-clip: rect(0px, 4000px, 1000px, 0px);
+    -sand-clip: rect(0px, 4000px, 1000px, 0px);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -sand-transition: all 1s ease;
+}
+.secondhidden{
+    position: absolute;
+    background-color: white;
+    width: 88%;
+    height: 90%;
+    border: 2px solid #4b4b4b;
+    top: 5%;
+    right: 6%;
+    z-index: 1;
+    transition: height 1s ease;
+    clip: rect(0px, 4000px, 0px, 0px);
+    -webkit-clip: rect(0px, 4000px, 0px, 0px);
+    -moz-clip: rect(0px, 4000px, 0px, 0px);
+    -o-clip: rect(0px, 4000px, 0px, 0px);
+    -ms-clip: rect(0px, 4000px, 0px, 0px);
+    -sand-clip: rect(0px, 4000px, 0px, 0px);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -sand-transition: all 1s ease;
+}
+
+.second p{
+    position: absolute;
+    font-family: ProLight;
+    font-size: 1.5em;
+    padding: 50px;
+    top: 50%;
+    text-align: center;
+    height: 500px;
+    margin-top: -250px;
+}
+.second span{
+    font-weight: 700;
+}
+.second img{
+    width: 250px;
+}
+
+.features{
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #f5ac77;
+}
+.thirdhidden{
+    position: absolute;
+    background-color: white;
+    width: 88%;
+    height: 90%;
+    border: 2px solid #4b4b4b;
+    top: 5%;
+    right: 6%;
+    z-index: 1;
+    transition: height 1s ease;
+    clip: rect(1000px, 4000px, 1000px, 0px);
+    -webkit-clip: rect(1000px, 4000px, 1000px, 0px);
+    -moz-clip: rect(1000px, 4000px, 1000px, 0px);
+    -o-clip: rect(1000px, 4000px, 1000px, 0px);
+    -ms-clip: rect(1000px, 4000px, 1000px, 0px);
+    -sand-clip: rect(1000px, 4000px, 1000px, 0px);
+    transition: clip 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -sand-transition: all 1s ease;
+}
+.third{
+    position: absolute;
+    background-color: white;
+    width: 88%;
+    height: 90%;
+    border: 2px solid #4b4b4b;
+    top: 5%;
+    right: 6%;
+    z-index: 1;
+    transition: height 1s ease;
+    clip: rect(0px, 4000px, 1000px, 0px);
+    -webkit-clip: rect(0px, 4000px, 1000px, 0px);
+    -moz-clip: rect(0px, 4000px, 1000px, 0px);
+    -o-clip: rect(0px, 4000px, 1000px, 0px);
+    -ms-clip: rect(0px, 4000px, 1000px, 0px);
+    -sand-clip: rect(0px, 4000px, 1000px, 0px);
+    transition: clip 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -sand-transition: all 1s ease;
+}
+.third h1{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    font-family: ProLight;
+}
+.third p{
+    position: absolute;
+    font-family: ProLight;
+    font-size: 1.5em;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    height: 500px;
+    margin-top: -200px;
+    margin-left: -250px;
+}
+
+.third span{
+    font-weight: 700;
+}
+
+.third img{
+    width: 150px;
+    margin: 40px;
+    margin-top: 0px;
+}
+
+
+
+
+.thirdhidden h1{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    font-family: ProLight;
+}
+.thirdhidden p{
+    position: absolute;
+    font-family: ProLight;
+    font-size: 1.5em;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    height: 500px;
+    margin-top: -200px;
+    margin-left: -250px;
+}
+
+.thirdhidden span{
+    font-weight: 700;
+}
+
+.thirdhidden img{
+    width: 150px;
+    margin: 40px;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hitarea{
+  position:fixed; 
+  left:50%;
+  top: 50%;
+  width:500px;
+  height:500px;
+    margin-left: -225px;
+    margin-top: -225px;
+  background:#f5ac77;
+  border-radius: 5em;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.53);
+    transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -sand-transition: all 1.2s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+.hitareahidden{
+    top: -100%;
+}
+
+.hitbox{
+    width:100px;
+    height:100px;
+    float:left;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -sand-transition: all .5s ease;
+    
+}
+
+.rounded{
+    background: #caefe7;
+    width: 96%;
+    height: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 50%;
+    background-image: url(public/u.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.53);
+}
+
+
+/* eyes */
+.eye{
+  position:absolute;
+  width:35%;
+  height:35%;
+  background: #fff;
+  border-radius:50%;
+  left:2%;
+  top: 2%;  
+  pointer-events: none;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.53);
+}
+
+.eye+.eye{
+    left: 63%; 
+}
+
+.pupil{
+  position:relative;
+  width:40%;
+  height:40%;
+  background:#000;
+  border-radius:50%;
+  left:30%;
+  top:40%;
+  margin:-12px 0 0 -12px;
+  -webkit-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -sand-transition: all .5s ease;
+}
+
+.eyelid{
+    width:37%;
+    height: 10%;
+    position:absolute;
+    left:2%;
+    pointer-events: none;
+    background: #000;
+    -webkit-animation-name:             blink; 
+    -webkit-animation-duration:         3.5s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function:  linear;
+    -webkit-animation-direction:        alternate;
+    -webkit-animation-delay: 1s; 
+    -webkit-transition: all .5s ease;
+    
+    
+}
+
+.eyelid+.eyelid{
+    left: 61%;
+}
+
+/* Blinking eyes */
+@-webkit-keyframes blink{
+  0%{
+    top:2%;
+  }
+ 95%{
+    top:2%;
+  }
+  100%{ 
+    top:8%;
+  }
+}
+
+/* hover events */
+
+/* eye lids */
+.hitbox:hover ~ .eyelid{
+    -webkit-transform: rotate(-10deg);
+}
+.hitbox:hover ~ .eyelid:nth-of-type(2n+1){
+    -webkit-transform: rotate(10deg);
+}
+#c-3:hover ~ .eyelid{
+    -webkit-transform: rotate(15deg);
+}
+#c-3:hover ~ .eyelid:nth-of-type(2n+1) {
+    -webkit-transform: rotate(-15deg);
+}
+
+/* pupils */
+
+#a-1:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(60deg) translate(-60%);
+}
+
+#a-2:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(80deg) translate(-60%);
+}
+
+#a-3:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(90deg) translate(-60%);
+}
+
+#a-4:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(100deg) translate(-60%);
+}
+
+#a-5:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(120deg) translate(-60%);
+}
+
+#b-1:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(50deg) translate(-60%);
+}
+
+#b-2:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(70deg) translate(-40%);
+}
+
+#b-3:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(100deg) translate(-40%);
+}
+
+#b-3:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+    -webkit-transform: rotate(80deg) translate(-40%);
+}
+
+#b-4:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(110deg) translate(-40%);
+}
+
+#b-5:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(130deg) translate(-40%);
+}
+
+#c-1:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(0deg) translate(-50%);
+}
+
+#c-2:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(0deg) translate(-40%);
+}
+
+#c-3:hover ~ .eye > .pupil{
+    background: red;
+    -webkit-transform: rotate(180deg) translate(-80%);
+}
+
+#c-3:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+    -webkit-transform: rotate(0deg) translate(-50%);
+}
+
+#c-4:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(180deg) translate(-20%);
+}
+
+#c-5:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(180deg) translate(-60%);
+}
+
+#d-1:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-40deg) translate(-40%);
+}
+
+#d-2:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-60deg) translate(-40%);
+}
+
+#d-3:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-120deg) translate(-40%);
+}
+
+#d-3:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+    -webkit-transform: rotate(-60deg) translate(-40%);
+}
+
+#d-4:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-130deg) translate(-60%);
+}
+
+#d-4:hover ~ .eye:nth-of-type(2n+1) > .pupil{
+    -webkit-transform: rotate(-100deg) translate(-60%);
+}
+
+#d-5:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-140deg) translate(-60%);
+}
+
+#e-1:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-40deg) translate(-60%);
+}
+
+#e-2:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-60deg) translate(-30px);
+}
+
+#e-3:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-120deg) translate(-30px);
+}
+
+#e-3:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+    -webkit-transform: rotate(-60deg) translate(-30px);
+}
+
+#e-4:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-130deg) translate(-30px);
+}
+
+#e-4:hover ~ .eye:nth-of-type(2n+1) > .pupil{
+    -webkit-transform: rotate(-100deg) translate(-30px);
+}
+
+#e-5:hover ~ .eye > .pupil{
+    -webkit-transform: rotate(-140deg) translate(-30px);
+}
+
+
+
+
+
+/*another animation for the menu to include once clicked or onhover*/
+
+.animate-logo{
+    width:100px;
+    height: 100px;
+    left:450px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.animate-grid{
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.animate-side-menu{
+left: 0px;
+}
+/*another animation for the menu to include once clicked or onhover*/
+
+
+
+
+
+
+
+
+
+
+/*end of logo animation */
+
+.row{
+    background: #575757;
+    height: 800px;
+}
+.r2{
+    background: #caefe7;
+}
+.r3{
+    background: #f5ac77;
+}
+.r4{
+    background: #575757;
+}
+.r5{
+    background: #caefe7;
+}
+.r6{
+    background: #f5ac77;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.base{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    background-image: url(imgs/back01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    
+}
+.triangle{
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 0 0 1200px;
+    border-color: transparent transparent transparent #caefe7;
+}
+.basediv{
+    position: fixed;
+    background-color: transparent;
+    width: 88%;
+    height: 90%;
+    border: 2px solid #4b4b4b;
+    top: 5%;
+    right: 6%;
+    
+}
+
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.imgpart{
+    position: absolute;
+    width: 500px;
+    height: 100%;
+}
+.textpart{
+    width: 500px;
+    height: 100%;
+    margin-left: 500px;
+    padding: 20px;
+}
+.phone{
+    position: absolute;
+    width: 300px;
+    margin-left: 75px;
+    margin-top: 80px;
+    top: 0;
+    left: 0;
+    clip: rect(0px,0px,1000px,0px);
+    -webkit-clip: rect(0px,0px,1000px,0px);
+    -moz-clip: rect(0px,0px,1000px,0px);
+    -o-clip: rect(0px,0px,1000px,0px);
+    -ms-clip: rect(0px,0px,1000px,0px);
+    -sand-clip: rect(0px,0px,1000px,0px);
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -sand-transition: all .5s ease;
+}
+.phoneactive{
+    position: absolute;
+    width: 300px;
+    margin-left: 75px;
+    margin-top: 80px;
+    top: 0;
+    left: 0;
+    clip: rect(0px,300px,1000px,0px);
+    -webkit-clip: rect(0px,300px,1000px,0px);
+    -moz-clip: rect(0px,300px,1000px,0px);
+    -o-clip: rect(0px,300px,1000px,0px);
+    -ms-clip: rect(0px,300px,1000px,0px);
+    -sand-clip: rect(0px,300px,1000px,0px);
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -sand-transition: all .5s ease;
+}
+.text{
+    position: absolute;
+    font-family: ProLight;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 250px;
+    padding-left: 40x;
+    clip: rect(0px,0px,1000px,0px); 
+    -webkit-clip: rect(0px,0px,1000px,0px);
+    -moz-clip: rect(0px,0px,1000px,0px);
+    -o-clip: rect(0px,0px,1000px,0px);
+    -ms-clip: rect(0px,0px,1000px,0px);
+    -sand-clip: rect(0px,0px,1000px,0px);
+}
+
+.textactive{
+    position: absolute;
+    font-family: ProLight;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 250px;
+    padding-right: 40x;
+    clip: rect(0px,3500px,1000px,0px);
+    -webkit-clip: rect(0px,3500px,1000px,0px);
+    -moz-clip: rect(0px,3500px,1000px,0px);
+    -o-clip: rect(0px,3500px,1000px,0px);
+    -ms-clip: rect(0px,3500px,1000px,0px);
+    -sand-clip: rect(0px,3500px,1000px,0px);
+}
+
+
+
+.container ul{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+}
+.number{
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    font-family: ProLight;
+    font-size: 1.5em;
+    width: 50px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -sand-transition: all .5s ease;
+}
+.number:hover{
+    background-color: #565656;
+    color: #f5ac77
+}
+.numberactive{
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    font-family: ProLight;
+    font-size: 1.5em;
+    width: 50px;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #f5ac77;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -sand-transition: all .5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media screen and (max-width: 800px) {
+        .first{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
+        .firsthidden{
+            height: 0%;
+            transition: height 1s ease;
+            -webkit-transition: height 1s ease;
+            -moz-transition: height 1s ease;
+            -o-transition: height 1s ease;
+            -ms-transition: height 1s ease;
+            -sand-transition: height 1s ease;
+        }
+
+        #menu{
+            position: fixed;
+            margin: 0;
+            background-color: #f5ac77;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            color: white;
+            z-index: 101;
+            top: 0;
+            left: 0;
+            font-family: ProLight;
+            padding-top: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: -1px 0px 20px rgba(75, 75, 75, 0.49);
+        }
+
+        .rightmenuhidden{
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 4px;
+            z-index: 100;
+            width: 200px;
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -sand-transition: all 1s ease;
+            clip: rect(0px,0px,1000px,0px); 
+            -webkit-clip: rect(0px,0px,1000px,0px); 
+            -moz-clip: rect(0px,0px,1000px,0px); 
+            -o-clip: rect(0px,0px,1000px,0px); 
+            -ms-clip: rect(0px,0px,1000px,0px); 
+            -sand-clip: rect(0px,0px,1000px,0px); 
+        }
+        .rightmenu{
+            position: absolute;
+            width: 200px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 4px;
+            background-color: #f5ac77;
+            box-shadow: -1px 0px 20px rgba(75, 75, 75, 0.49);
+            z-index: 100;
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -sand-transition: all 1s ease;
+            clip: rect(0px,200px,1000px,0px);
+            -webkit-clip: rect(0px,200px,1000px,0px); 
+            -moz-clip: rect(0px,200px,1000px,0px); 
+            -o-clip: rect(0px,200px,1000px,0px); 
+            -ms-clip: rect(0px,200px,1000px,0px); 
+            -sand-clip: rect(0px,200px,1000px,0px);
+        }
+        .hitarea{ 
+          width:250px;
+          height:250px;
+            margin-left: -125px;
+            margin-top: -125px;
+          border-radius: 2em;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.53);
+            -webkit-transition: all 1.2s ease;
+            transition: all 1.2s ease;
+            -webkit-transition: all 1.2s ease;
+            -moz-transition: all 1.2s ease;
+            -o-transition: all 1.2s ease;
+            -ms-transition: all 1.2s ease;
+            -sand-transition: all 1.2s ease;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        .hitbox{
+        width:50px;
+        height:50px;
+        float:left;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -sand-transition: all .5s ease;
+
+        }
+        .second{
+            width: 100%;
+            height: 100%;
+            border: 0px solid #4b4b4b;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transition: height 1s ease;
+            clip: rect(0px, 4000px, 1000px, 0px);
+            -webkit-clip: rect(0px, 4000px, 1000px, 0px);
+            -moz-clip: rect(0px, 4000px, 1000px, 0px);
+            -o-clip: rect(0px, 4000px, 1000px, 0px);
+            -ms-clip: rect(0px, 4000px, 1000px, 0px);
+            -sand-clip: rect(0px, 4000px, 1000px, 0px);
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -sand-transition: all 1s ease;
+        }
+        .secondhidden{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transition: height 1s ease;
+            clip: rect(0px, 4000px, 0px, 0px);
+            -webkit-clip: rect(0px, 4000px, 0px, 0px);
+            -moz-clip: rect(0px, 4000px, 0px, 0px);
+            -o-clip: rect(0px, 4000px, 0px, 0px);
+            -ms-clip: rect(0px, 4000px, 0px, 0px);
+            -sand-clip: rect(0px, 4000px, 0px, 0px);
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -sand-transition: all 1s ease;
+        }
+
+        .second p{
+            font-size: 1.1em;
+            padding: 20px;
+            top: 50%;
+            text-align: center;
+            height: 500px;
+            margin-top: -250px;
+        }
+        .second span{
+            font-weight: 700;
+        }
+        .second img{
+            width: 250px;
+        }
+
+        .features{
+            cursor: pointer;
+            font-size: 1.2em;
+            color: #f5ac77;
+        }
+        .thirdhidden{
+            width: 100%;
+            height: 100%;
+            border: 0pxx solid #4b4b4b;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transition: height 1s ease;
+            clip: rect(1000px, 4000px, 1000px, 0px);
+            -webkit-clip: rect(1000px, 4000px, 1000px, 0px);
+            -moz-clip: rect(1000px, 4000px, 1000px, 0px);
+            -o-clip: rect(1000px, 4000px, 1000px, 0px);
+            -ms-clip: rect(1000px, 4000px, 1000px, 0px);
+            -sand-clip: rect(1000px, 4000px, 1000px, 0px);
+            transition: clip 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -sand-transition: all 1s ease;
+        }
+        .third{
+            width: 100%;
+            height: 100%;
+            border: 0px solid #4b4b4b;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transition: height 1s ease;
+            clip: rect(0px, 4000px, 1000px, 0px);
+            -webkit-clip: rect(0px, 4000px, 0px, 0px);
+            -moz-clip: rect(0px, 4000px, 0px, 0px);
+            -o-clip: rect(0px, 4000px, 0px, 0px);
+            -ms-clip: rect(0px, 4000px, 0px, 0px);
+            -sand-clip: rect(0px, 4000px, 0px, 0px);
+            transition: clip 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -sand-transition: all 1s ease;
+        }
+        .third h1{
+            font-size: 2em;
+            text-align: center;
+            margin-top: 80px;
+            font-family: ProLight;
+        }
+        .third p{
+            position: absolute;
+            font-family: ProLight;
+            font-size: 1.1em;
+            max-width: 350px;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            height: 500px;
+            margin-top: -200px;
+            margin-left: -175px;
+        }
+
+        .third span{
+            font-weight: 700;
+        }
+
+        .third img{
+            width: 100px;
+            margin: 20px;
+            margin-top: 0px;
+        }
+
+    
+        .triangle{
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 300px 0 0 800px;
+            border-color: transparent transparent transparent #caefe7;
+        }
+        .basediv{
+            position: fixed;
+            background-color: transparent;
+            width: 94%;
+            height: 96%;
+            border: 1px solid #4b4b4b;
+            top: 2%;
+            right: 3%;
+
+        }
+        .imgpart{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .textpart{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+            padding: 20px;
+        }
+        .phone{
+            position: absolute;
+            width: 200px;
+            margin-top: 20px;
+            top: 0;
+            left: 50%;
+            margin-left: -100px;
+            clip: rect(0px,0px,1000px,0px);
+            -webkit-clip: rect(0px,0px,1000px,0px);
+            -moz-clip: rect(0px,0px,1000px,0px);
+            -o-clip: rect(0px,0px,1000px,0px);
+            -ms-clip: rect(0px,0px,1000px,0px);
+            -sand-clip: rect(0px,0px,1000px,0px);
+            transition: all 0.5s ease;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -sand-transition: all .5s ease;
+        }
+        .phoneactive{
+            position: absolute;
+            width: 200px;
+            margin-top: 20px;
+            top: 0;
+            left: 50%;
+            margin-left: -100px;
+            clip: rect(0px,300px,1000px,0px);
+            -webkit-clip: rect(0px,300px,1000px,0px);
+            -moz-clip: rect(0px,300px,1000px,0px);
+            -o-clip: rect(0px,300px,1000px,0px);
+            -ms-clip: rect(0px,300px,1000px,0px);
+            -sand-clip: rect(0px,300px,1000px,0px);
+            transition: all 0.5s ease;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -sand-transition: all .5s ease;
+        }
+        .text{
+            font-size: 1.1em;
+            text-align: center;
+            width: 300px;
+            left: 50%;
+            margin-left: -170px;
+            margin-top: 450px;
+            padding-left: 0px;
+            clip: rect(0px,0px,1000px,0px);
+            -webkit-clip: rect(0px,0px,1000px,0px);
+            -moz-clip: rect(0px,0px,1000px,0px);
+            -o-clip: rect(0px,0px,1000px,0px);
+            -ms-clip: rect(0px,0px,1000px,0px);
+            -sand-clip: rect(0px,0px,1000px,0px);
+        }
+
+        .textactive{
+            font-size: 1.1em;
+            text-align: center;
+            width: 300px;
+            left: 50%;
+            margin-left: -170px;
+            margin-top: 450px;
+            padding-right: 0px;
+            clip: rect(0px,3500px,1000px,0px); 
+            -webkit-clip: rect(0px,3500px,1000px,0px);
+            -moz-clip: rect(0px,3500px,1000px,0px);
+            -o-clip: rect(0px,3500px,1000px,0px);
+            -ms-clip: rect(0px,3500px,1000px,0px);
+            -sand-clip: rect(0px,3500px,1000px,0px);
+        }
+
+
+
+        .container ul{
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            width: 300px;
+            left: 50%;
+            margin-left: -170px;
+        }
+        .number{
+            margin: 0;
+            text-align: center;
+            list-style: none;
+            display: inline-block;
+            font-family: ProLight;
+            font-size: 1.1em;
+            width: 25px;
+            height: 25px;
+            padding-top: 0px;
+            border-radius: 100%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -sand-transition: all .5s ease;
+        }
+        .number:hover{
+            background-color: #565656;
+            color: #f5ac77
+        }
+        .numberactive{
+            margin: 0;
+            text-align: center;
+            list-style: none;
+            display: inline-block;
+            font-family: ProLight;
+            font-size: 1.1em;
+            width: 25px;
+            height: 25px;
+            padding-top: 0px;
+            background-color: #f5ac77;
+            border-radius: 100%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -sand-transition: all .5s ease;
+        }
+}
+
+
